@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre XML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 50px 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a365d; /* Azul oscuro institucional */
+            text-align: center;
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #2b6cb0; /* Azul medio */
+            margin-top: 40px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #4a5568; /* Gris oscuro */
+            margin-top: 30px;
+        }
+        .portada {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 1.1em;
+            color: #4a5568;
+        }
+        .portada p {
+            margin: 8px 0;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        pre {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 4px solid #3b82f6;
+        }
+        code {
+            background-color: #f1f5f9;
+            color: #b91c1c;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.95em;
+        }
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+        }
+        /* Simulación de resaltado de sintaxis XML */
+        .xml-tag { color: #60a5fa; }
+        .xml-attr { color: #34d399; }
+        .xml-val { color: #fca5a5; }
+        
+        .referencias p {
+            padding-left: 40px;
+            text-indent: -40px; /* Sangría francesa */
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Investigación sobre XML: Conceptos, Usos e Importancia</h1>
+    
+    <div class="portada">
+        <p><strong>Estudiante:</strong> Kendri Miguel Tatis de Jesus</p>
+        <p><strong>Institución:</strong> Universidad Autónoma de Santo Domingo (UASD)</p>
+        <p><strong>Asignatura:</strong> Desarrollo Web / Informática</p>
+        <p><strong>Fecha:</strong> 7 de noviembre de 2026</p>
+    </div>
+
+    <h2>Introducción</h2>
+    <p>En la era digital, el almacenamiento y el intercambio de información de manera eficiente son fundamentales para el funcionamiento de los sistemas informáticos. La necesidad de un estándar que permitiera a diferentes plataformas y lenguajes de programación comunicarse sin problemas dio origen a tecnologías especializadas en la estructuración de datos. En este contexto, la presente investigación aborda el Lenguaje de Marcado Extensible (XML), analizando sus fundamentos, características, aplicaciones actuales y su importancia en el ecosistema tecnológico.</p>
+
+    <h2>Desarrollo</h2>
+
+    <h3>1. ¿Qué es XML?</h3>
+    <p>XML (Extensible Markup Language, o Lenguaje de Marcado Extensible) es un metalenguaje definido por el World Wide Web Consortium (W3C). Se utiliza para estructurar, almacenar y transportar datos mediante el uso de etiquetas. A diferencia de otros lenguajes con etiquetas predefinidas, XML permite a los desarrolladores definir sus propias etiquetas, lo que lo hace altamente flexible y adaptable a cualquier tipo de información.</p>
+
+    <h3>2. Propósito de XML</h3>
+    <p>El propósito fundamental de XML es facilitar el intercambio de datos estructurados entre diferentes sistemas de información, independientemente del hardware o software que utilicen. Actúa como un puente universal que permite que sistemas incompatibles (por ejemplo, una base de datos en SQL Server y una aplicación en Java) puedan compartir información de manera legible tanto para las máquinas como para los seres humanos.</p>
+
+    <h3>3. Características principales de XML</h3>
+    <ul>
+        <li><strong>Extensible:</strong> Los usuarios pueden crear sus propias etiquetas según las necesidades específicas de los datos.</li>
+        <li><strong>Autodescriptivo:</strong> La estructura y los nombres de las etiquetas indican claramente qué tipo de información contienen, facilitando su comprensión.</li>
+        <li><strong>Basado en texto:</strong> Al ser texto plano, es independiente de la plataforma y del sistema operativo.</li>
+        <li><strong>Estructura jerárquica:</strong> Organiza los datos en forma de árbol, con un elemento raíz del que se desprenden ramas (elementos hijos).</li>
+        <li><strong>Estricto:</strong> Requiere que los documentos estén "bien formados" (etiquetas correctamente cerradas, anidadas de forma adecuada), de lo contrario, los analizadores (parsers) generarán un error.</li>
+    </ul>
+
+    <h3>4. Ventajas y desventajas del uso de XML</h3>
+    <p><strong>Ventajas:</strong></p>
+    <ul>
+        <li><strong>Interoperabilidad:</strong> Facilita la comunicación entre sistemas heterogéneos.</li>
+        <li><strong>Soporte internacional:</strong> Utiliza codificación Unicode, soportando casi cualquier idioma.</li>
+        <li><strong>Separación de datos y presentación:</strong> A diferencia de HTML, XML solo se encarga de transportar los datos, dejando la presentación a otras tecnologías (como XSLT).</li>
+        <li><strong>Validación:</strong> Permite definir reglas estrictas para los documentos a través de esquemas (XML Schema o DTD), garantizando la integridad de los datos.</li>
+    </ul>
+    <p><strong>Desventajas:</strong></p>
+    <ul>
+        <li><strong>Verbosidad:</strong> El uso repetitivo de etiquetas de apertura y cierre hace que los archivos sean más grandes y pesados.</li>
+        <li><strong>Lentitud de procesamiento:</strong> Al ser un formato basado en texto y altamente estructurado, requiere más recursos computacionales para ser parseado en comparación con formatos más ligeros.</li>
+        <li><strong>Complejidad:</strong> Para estructuras de datos muy simples, XML puede resultar excesivamente complejo.</li>
+    </ul>
+
+    <h3>5. Diferencia entre XML y otros formatos de datos</h3>
+    <ul>
+        <li><strong>XML vs. HTML:</strong> Mientras que HTML está diseñado para <strong>mostrar</strong> datos y tiene etiquetas predefinidas (como <code>&lt;h1&gt;</code> o <code>&lt;p&gt;</code>), XML está diseñado para <strong>transportar</strong> y estructurar datos mediante etiquetas personalizadas (como <code>&lt;cliente&gt;</code> o <code>&lt;precio&gt;</code>).</li>
+        <li><strong>XML vs. JSON:</strong> JSON (JavaScript Object Notation) es otro formato popular para el intercambio de datos. JSON utiliza pares de clave-valor y arreglos, siendo mucho más ligero y rápido de leer, especialmente en aplicaciones web. XML, en cambio, utiliza un modelo de árbol con etiquetas y atributos, lo que lo hace más verboso, pero ofrece ventajas en la validación de datos complejos y soporte de espacios de nombres (namespaces).</li>
+    </ul>
+
+    <h3>6. Usos actuales de XML en el desarrollo y sistemas</h3>
+    <p>A pesar del auge de JSON en servicios REST, XML sigue siendo vital en múltiples áreas:</p>
+    <ul>
+        <li><strong>Servicios Web (SOAP):</strong> Protocolos empresariales críticos siguen basándose en XML para la transferencia de mensajes estructurados.</li>
+        <li><strong>Configuraciones de aplicaciones:</strong> Frameworks (como Spring en Java) y sistemas operativos (como los archivos Manifest en Android) utilizan XML para sus archivos de configuración.</li>
+        <li><strong>Formatos de documentos:</strong> Los formatos de Microsoft Office (OOXML, ej. .docx, .xlsx) y gráficos vectoriales (SVG) están basados en XML.</li>
+        <li><strong>Sindicación de contenido:</strong> Los feeds RSS, utilizados para la distribución de noticias y podcasts, están estructurados en XML.</li>
+        <li><strong>Integración empresarial (B2B):</strong> Intercambio de facturas electrónicas y transacciones financieras entre corporaciones.</li>
+    </ul>
+
+    <h2>Ejemplo Sencillo de un Documento XML</h2>
+    <p>A continuación, se presenta un ejemplo de un documento XML que almacena información sobre una biblioteca:</p>
+
+<pre><code><span class="xml-tag">&lt;?xml</span> <span class="xml-attr">version</span>=<span class="xml-val">"1.0"</span> <span class="xml-attr">encoding</span>=<span class="xml-val">"UTF-8"</span><span class="xml-tag">?&gt;</span>
+<span class="xml-tag">&lt;biblioteca&gt;</span>
+    <span class="xml-tag">&lt;libro</span> <span class="xml-attr">categoria</span>=<span class="xml-val">"tecnologia"</span><span class="xml-tag">&gt;</span>
+        <span class="xml-tag">&lt;titulo&gt;</span>Aprender XML<span class="xml-tag">&lt;/titulo&gt;</span>
+        <span class="xml-tag">&lt;autor&gt;</span>Juan Pérez<span class="xml-tag">&lt;/autor&gt;</span>
+        <span class="xml-tag">&lt;anio&gt;</span>2023<span class="xml-tag">&lt;/anio&gt;</span>
+        <span class="xml-tag">&lt;precio&gt;</span>25.50<span class="xml-tag">&lt;/precio&gt;</span>
+    <span class="xml-tag">&lt;/libro&gt;</span>
+<span class="xml-tag">&lt;/biblioteca&gt;</span></code></pre>
+
+    <p><strong>Explicación de sus partes principales:</strong></p>
+    <ol>
+        <li><strong>Prólogo (Declaración XML):</strong> <code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code> indica la versión de XML que se está utilizando y el tipo de codificación de caracteres.</li>
+        <li><strong>Elemento Raíz:</strong> <code>&lt;biblioteca&gt;</code> es el elemento padre que engloba a todo el resto del documento. Todo documento XML debe tener un único elemento raíz.</li>
+        <li><strong>Elementos Hijos:</strong> <code>&lt;libro&gt;</code>, <code>&lt;titulo&gt;</code>, <code>&lt;autor&gt;</code>, <code>&lt;anio&gt;</code> y <code>&lt;precio&gt;</code> son nodos de datos que contienen la información estructurada.</li>
+        <li><strong>Atributo:</strong> <code>categoria="tecnologia"</code> proporciona información adicional o metadatos sobre el elemento <code>&lt;libro&gt;</code>.</li>
+    </ol>
+
+    <h2>Conclusión</h2>
+    <p>XML representó un punto de inflexión en la forma en que los sistemas de información comparten datos. Aunque en el desarrollo de aplicaciones web modernas ha cedido terreno frente a formatos más ligeros como JSON, XML se mantiene como un estándar robusto y fundamental en el entorno corporativo, la configuración de software, los formatos de documentos y los servicios web donde la validación estricta y la jerarquía de datos compleja son indispensables.</p>
+
+    <h2>Referencias</h2>
+    <div class="referencias">
+        <p>Bray, T., Paoli, J., Sperberg-McQueen, C. M., Maler, E., & Yergeau, F. (2008). <em>Extensible Markup Language (XML) 1.0 (Fifth Edition)</em>. W3C. https://www.w3.org/TR/xml/</p>
+        <p>Harold, E. R., & Means, W. S. (2004). <em>XML in a Nutshell</em> (3ra ed.). O'Reilly Media.</p>
+        <p>W3Schools. (s.f.). <em>XML Tutorial</em>. Recuperado el 7 de noviembre de 2026, de https://www.w3schools.com/xml/</p>
+    </div>
+</div>
+
+</body>
+</html>
